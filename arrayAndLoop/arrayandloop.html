@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoLists</title>
+</head>
+<style>
+    .div{
+        display: grid;
+        grid-template-columns: 200px 130px 100px 100px;
+        margin-top: 10px;
+        
+    }
+
+#input, #date,#time{
+    padding: 10px;
+}
+#btn{
+    padding: 10px;
+    color: white;
+    background-color: rgb(77, 161, 77);
+    width: 100px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(49, 203, 113);
+}
+.dlt{
+    color: white;
+    background-color: rgba(238, 107, 7, 0.932);
+    padding: 3px;
+
+    border: 1px solid white;
+}
+</style>
+<body>
+    <div class="container">
+        <input id="input" type="text" placeholder="Todo Name">
+        <input id="date" type="date" name="" >
+        <input type="time" pattern="^(0?[1-9]|1[0-2]):[0-5][0-9] (AM|PM|am|pm)$" id="time">
+        <button id="btn">Add</button>
+        <div class="div"></div>
+    </div>
+    
+    <script src="arrayandloop.js"></script>
+</body>
+</html>
